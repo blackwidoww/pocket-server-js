@@ -6,7 +6,7 @@ const envSchema = z.object({
 
 export const env = envSchema.parse(process.env) 
 
-/* parse: tenta vrificar se o (process.env) segue o seguinte formato: 
+/* parse: tenta verificar se o (process.env) segue o seguinte formato: 
     const envSchema = z.object({
     DATABASE_URL: z.string().url(),
 })

@@ -16,9 +16,9 @@ app.setSerializerCompiler(serializerCompiler)
 //visualizando
 
 app.get('/pending-goals', async () => {
-  const sql = await getWeekPendingGoals()
+  const { pendingGoals } = await getWeekPendingGoals()
 
-  return sql
+  return { pendingGoals }
 })
 
 app.post(
